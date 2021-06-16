@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Plant Disease Detection</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Disease Detection</a></li>
+            <!-- <li><a href="typesOfDisease.html">Types of Disease</a></li> -->
+          </ul>
+        </div>
+      </nav>
+        
+      <div class="container">
+        <h3> Plant Disease Detection</h3>
+        <p>Please Upload Your Image</p>
+      </div>
+
+      <div id="input">
+        <form method=POST enctype=multipart/form-data>
+          <input type=file name=image style="display:inline-block;margin-left:45vw" >
+          <input type=submit value=Predict >
+          <b>
+          <H4 style="margin-left: 45vw;">Disease Predicted is : {{ prediction }}</H4>
+          </b>
+          
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <div class="container">
+        <h3> Types of Plants</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Apple</li>
+            <li class="list-group-item">Blueberry</li>
+            <li class="list-group-item">Cherry</li>
+            <li class="list-group-item">Corn</li>
+            <li class="list-group-item">Grape</li>
+            <li class="list-group-item">Orange</li>
+            <li class="list-group-item">Peach</li>
+            <li class="list-group-item">Pepper</li>
+            <li class="list-group-item">Potato</li>
+            <li class="list-group-item">Raspberry</li>
+            <li class="list-group-item">Soyabean</li>
+            <li class="list-group-item">Squash</li>
+            <li class="list-group-item">Strawberry</li>
+            <li class="list-group-item">Tomato</li>
+          </ul>
+      </div>
+
+      <div class="container">
+        <h3> Types of Disease</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Apple Scab</li>
+            <li class="list-group-item">Apple Black Rot</li>
+            <li class="list-group-item">Apple healthy</li>
+            <li class="list-group-item">Apple Cedar</li>
+            <li class="list-group-item">Blueberry Healthy</li>
+            <li class="list-group-item">Cherry Healthy</li>
+            <li class="list-group-item">Cherry Powdery Mildew</li>
+            <li class="list-group-item">Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot </li>
+            <li class="list-group-item">Corn_(maize)___Common_rust_</li>
+            <li class="list-group-item">Corn_(maize)___healthy</li>
+            <li class="list-group-item">Corn_(maize)___Northern_Leaf_Blight</li>
+            <li class="list-group-item">Grape___Black_rot</li>
+            <li class="list-group-item">Grape___Esca_(Black_Measles)</li>
+            <li class="list-group-item">Grape___Leaf_blight_(Isariopsis_Leaf_Spot)</li>
+            <li class="list-group-item">Grape___healthy</li>
+            <li class="list-group-item">Grape___Leaf_blight_(Isariopsis_Leaf_Spot)</li>
+            <li class="list-group-item">Orange___Haunglongbing_(Citrus_greening)</li>
+            <li class="list-group-item">Peach___Bacterial_spot</li>
+            <li class="list-group-item">Peach___healthy</li>
+            <li class="list-group-item">Pepper,_bell___Bacterial_spot</li>
+            <li class="list-group-item">Pepper,_bell___healthy</li>
+            <li class="list-group-item">Potato___Early_blight</li>
+            <li class="list-group-item">Potato___healthy</li>
+            <li class="list-group-item">Potato___Late_blight</li>
+            <li class="list-group-item">Raspberry___healthy</li>
+            <li class="list-group-item">Soybean___healthy</li>
+            <li class="list-group-item">Squash___Powdery_mildew</li>
+            <li class="list-group-item">Strawberry___healthy</li>
+            <li class="list-group-item">Strawberry___Leaf_scorch</li>
+            <li class="list-group-item">Tomato___Bacterial_spot</li>
+            <li class="list-group-item">Tomato___Early_blight</li>
+            <li class="list-group-item">Tomato___healthy</li>
+            <li class="list-group-item">Tomato___Late_blight</li>
+            <li class="list-group-item">Tomato___Leaf_Mold</li>
+            <li class="list-group-item">Tomato___Septoria_leaf_spot</li>
+            <li class="list-group-item">Tomato___Spider_mites Two-spotted_spider_mite</li>
+            <li class="list-group-item">Tomato___Target_Spot</li>
+            <li class="list-group-item">Tomato___Tomato_mosaic_virus</li>
+            <li class="list-group-item">Tomato___Tomato_Yellow_Leaf_Curl_Virus</li>
+          </ul>
+      </div>
+      
+
+
+      
+</body>
+</html>
